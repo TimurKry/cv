@@ -1,0 +1,229 @@
+@page {
+  size: A4;
+  margin: 14mm 12mm;
+}
+
+:root {
+  --ink: #16181d;
+  --ink-soft: #33383f;
+  --muted: #6b7280;
+  --line: #d8dbe0;
+  --accent: #4338ca;
+  --accent-soft: #eef2ff;
+  --card-bg: #fafafa;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  font-family: 'Liberation Sans', Arial, Helvetica, sans-serif;
+  font-size: 9.2pt;
+  line-height: 1.38;
+  color: var(--ink-soft);
+  background: #fff;
+}
+
+strong { color: var(--ink); font-weight: 700; }
+a { color: var(--accent); text-decoration: none; word-break: break-all; }
+
+/* ---------- header ---------- */
+
+.doc-title {
+  font-size: 8.4pt;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+
+.name {
+  margin: 0;
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.role {
+  margin: 3px 0 0;
+  font-size: 11pt;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.header-rule {
+  height: 2px;
+  background: var(--accent);
+  margin: 9px 0 8px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px 18px;
+  font-size: 8.6pt;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.contact-grid .wide { grid-column: 1 / -1; }
+
+/* ---------- sections ---------- */
+
+.section { margin-bottom: 7px; }
+
+.section-title {
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  margin: 0 0 6px;
+}
+
+.about p { margin: 0 0 5px; }
+.about p:last-child { margin-bottom: 0; }
+
+/* ---------- experience ---------- */
+
+.job {
+  margin-bottom: 8px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.job:last-child { margin-bottom: 0; }
+
+.job-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: var(--ink);
+  flex: 1;
+}
+
+.job-meta {
+  width: 31%;
+  flex: 0 0 31%;
+  text-align: right;
+  font-size: 8.2pt;
+  color: var(--muted);
+  line-height: 1.32;
+}
+
+.job-intro { margin: 0 0 4px; }
+
+ul {
+  margin: 0;
+  padding-left: 13px;
+}
+
+li { margin-bottom: 1px; }
+
+.tech {
+  margin: 4px 0 0;
+  font-size: 8.2pt;
+  color: var(--muted);
+  background: var(--card-bg);
+  border-left: 2px solid var(--accent);
+  padding: 3px 7px;
+}
+
+/* ---------- skills ---------- */
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 33% 1fr;
+  gap: 10px;
+  padding: 3px 0;
+  border-bottom: 1px solid var(--line);
+  break-inside: avoid;
+}
+.skill-row:last-child { border-bottom: none; }
+
+.skill-label { font-weight: 700; color: var(--ink); font-size: 8.8pt; }
+.skill-items { color: var(--ink-soft); }
+
+/* ---------- education ---------- */
+
+.edu-title { font-weight: 700; color: var(--ink); }
+.edu-note { margin: 2px 0 0; }
+.edu-focus { margin: 2px 0 0; color: var(--muted); font-size: 8.5pt; }
+
+/* ---------- projects ---------- */
+
+.project {
+  margin-bottom: 7px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.project:last-child { margin-bottom: 0; }
+
+.project-head {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin-bottom: 3px;
+}
+
+.project-index {
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 7.5pt;
+  font-weight: 700;
+  text-align: center;
+  line-height: 14px;
+}
+
+.project-name {
+  margin: 0;
+  font-size: 10pt;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.project-intro { margin: 0 0 3px; }
+.project-link { display: block; margin-top: 3px; font-size: 8.2pt; }
+
+/* ---------- footer blocks ---------- */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  break-inside: avoid;
+}
+
+.lang-item { margin-bottom: 2px; }
+.pref-list { list-style: none; padding-left: 0; margin: 0; }
+.pref-list li { padding-left: 10px; position: relative; }
+.pref-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4.5px;
+  width: 3.5px;
+  height: 3.5px;
+  border-radius: 50%;
+  background: var(--accent);
+}

@@ -1,0 +1,504 @@
+{
+  "_comment": "Единственный источник фактов. Всё остальное (index.html, три PDF, og.png) генерируется отсюда командой `node src/build.mjs`. Токены вида {{name}} подставляются из блока facts — build падает, если токен неизвестен.",
+
+  "facts": {
+    "name": "Timur Kryvasheyev",
+    "email": "timurkry.dev@gmail.com",
+    "phone": "+49 163 5195493",
+    "city": "Leipzig",
+    "siteUrl": "https://timurkry.github.io/cv/",
+    "linkedin": "https://www.linkedin.com/in/timur-kryvasheyev-02940022b/",
+    "github": "https://github.com/TimurKry",
+    "portfolio": "https://ktimur-portfolio.netlify.app/",
+    "projectRepo": "https://github.com/TimurKry/meeting-point-finder",
+    "freelanceCount": "7",
+    "freelanceStack": "custom builds, Tilda, Webflow, Shopify",
+    "freelanceStackDe": "Custom-Builds, Tilda, Webflow, Shopify",
+    "straumannPeriod": "10/2023 – 06/2026",
+    "freelancePeriod": "06/2020 – present",
+    "freelancePeriodDe": "06/2020 – heute",
+    "actrioPeriod": "09/2021 – 07/2022",
+    "experienceYears": "6+"
+  },
+
+  "site": {
+    "lang": "en",
+    "title": "Timur Kryvasheyev — Full-Stack / Frontend Developer",
+    "description": "Timur Kryvasheyev — Full-Stack / Frontend Developer (React, TypeScript, Next.js, Node.js). Leipzig, Germany. Open to remote, hybrid, relocation.",
+    "badge": "Open to work — available immediately",
+    "headline": "Full-Stack / Frontend Developer — React · TypeScript · Next.js · Node.js",
+    "contact": [
+      "Leipzig, Germany",
+      "German citizen (EU) — no visa/work permit required"
+    ],
+    "about": [
+      "Full-Stack / Frontend Developer with <strong>{{experienceYears}} years of commercial experience</strong> building web applications across frontend, backend, APIs, and databases.",
+      "At <strong>Straumann Group</strong> (dual study / Praxispartner, global medtech), delivered internal websites and business tools — full-stack work, workflow digitalization, UX improvements, legacy refactoring, and REST/XML integrations. Since 2020, {{freelanceCount}} <strong>freelance</strong> client sites end-to-end — {{freelanceStack}}. Built <strong>TripTogether</strong> as a solo university project — a React/TypeScript + Node.js travel app with Mapbox, REST APIs, and Gemini-powered AI ranking.",
+      "Strong in <strong>JavaScript, TypeScript, React, Next.js, Node.js, SQL/MySQL, REST APIs</strong>, and AI-assisted development (Cursor, ChatGPT API, Gemini API). Product-oriented, self-organized, remote-ready. Looking for a mid-level full-stack or frontend role with real feature ownership."
+    ],
+    "experience": [
+      {
+        "title": "Full Stack Developer — Straumann Group",
+        "period": "{{straumannPeriod}} · Dual study / Praxispartner",
+        "intro": "Global medtech company — internal web applications, digitalization, legacy modernization.",
+        "bullets": [
+          "Built and maintained internal websites and web-based business tools for operational teams",
+          "Delivered end-to-end full-stack features: JavaScript frontends, Node.js services, SQL data layer",
+          "Digitalized manual workflows and optimized internal processes through automation",
+          "Refactored legacy modules (incl. Visual Basic .NET); improved reliability and maintainability",
+          "Integrated internal and external systems via REST APIs and XML",
+          "UX analysis (Figma) and interface improvements; documentation and code reviews in an international team"
+        ],
+        "tags": ["JavaScript", "Node.js", "SQL", "XML", "REST APIs", "Figma"]
+      },
+      {
+        "title": "Freelance Full Stack Developer",
+        "period": "{{freelancePeriod}}",
+        "intro": "{{freelanceCount}} freelance client sites — {{freelanceStack}}.",
+        "bullets": [
+          "Designed and shipped end-to-end websites and web apps for businesses and private clients",
+          "Built backend services with Node.js; optimized SQL/MySQL schemas and queries",
+          "React frontends, REST API integrations, automation tools, data-processing pipelines"
+        ],
+        "tags": ["React", "TypeScript", "Node.js", "SQL / MySQL"]
+      },
+      {
+        "title": "Game / XR Developer — Actrio Studio",
+        "period": "{{actrioPeriod}}",
+        "intro": "Immersive VR experience (The Great Ocean) — interactive 3D gameplay and exploration.",
+        "bullets": [
+          "Built gameplay mechanics and UI systems in C# / Unity",
+          "Testing, debugging, asset integration; collaboration with designers and artists"
+        ],
+        "tags": ["Unity", "C#", "XR/VR"]
+      }
+    ],
+    "skills": [
+      {
+        "title": "Frontend",
+        "items": "JavaScript, TypeScript · React, Next.js · HTML, CSS, Tailwind CSS · Responsive design · Component-based UI · UI/UX basics, Figma"
+      },
+      {
+        "title": "Backend & APIs",
+        "items": "Node.js · REST APIs · Server-side logic · Web scraping · AI API integration (ChatGPT, Gemini)"
+      },
+      {
+        "title": "Databases",
+        "items": "SQL, MySQL · Schema design · Joins, aggregations, triggers · Query optimization"
+      },
+      {
+        "title": "AI & workflow",
+        "items": "AI-assisted development (Cursor) · Prompt engineering · Google Sheets automation"
+      },
+      {
+        "title": "Tools",
+        "items": "Git, GitHub, GitLab · Vite, npm · VS Code, Cursor · Netlify · Docker (project context) · Tilda, Webflow, Shopify"
+      },
+      {
+        "title": "Additional",
+        "items": "Python, Java, C++, C, C# (academic/secondary) · Visual Basic .NET (Straumann context)"
+      }
+    ],
+    "education": {
+      "title": "Duale Hochschule Sachsen Leipzig — Computer Science / Informatics (dual study)",
+      "note": "Incomplete — not a completed degree. Studied through semester 5 of ~6; the program was discontinued by the university, which also ended the tied practical-training contract at Straumann Group."
+    },
+    "projects": [
+      {
+        "name": "TripTogether (Meeting Point Finder)",
+        "intro": "Solo university project — web app for finding optimal meeting-point cities between travelers, using maps, travel data, and AI-powered ranking.",
+        "bullets": [
+          "Full-stack delivery from idea to working prototype",
+          "Node.js backend connected to multiple external data sources",
+          "AI-powered ranking with Google Gemini API",
+          "React/TypeScript UI with maps and complex user flows"
+        ],
+        "tags": ["React", "TypeScript", "Node.js", "Mapbox", "Gemini API"],
+        "link": "{{projectRepo}}",
+        "linkLabel": "github.com/TimurKry/meeting-point-finder"
+      },
+      {
+        "name": "Personal Portfolio Website",
+        "intro": "Production-deployed, responsive, component-based frontend presenting projects and profile.",
+        "bullets": [],
+        "tags": ["React", "Netlify"],
+        "link": "{{portfolio}}",
+        "linkLabel": "ktimur-portfolio.netlify.app"
+      }
+    ],
+    "languages": [
+      { "name": "Russian", "level": "Native" },
+      { "name": "Belarusian", "level": "Native" },
+      { "name": "German", "level": "C1 / B2+ working proficiency" },
+      { "name": "English", "level": "B1 professional working proficiency" }
+    ],
+    "preferences": [
+      "Full-time — immediately available",
+      "Remote or hybrid (Germany, EU, CH, AT)",
+      "Open to relocation within Germany / EU",
+      "Product companies, SaaS, startups, modern tech teams"
+    ],
+    "downloads": [
+      { "file": "cv-fullstack-developer.pdf", "label": "CV — Full-Stack focus (PDF)", "hreflang": "en" },
+      { "file": "cv-frontend-developer.pdf", "label": "CV — Frontend focus (PDF)", "hreflang": "en" },
+      { "file": "cv-fullstack-developer-de.pdf", "label": "Lebenslauf — Full-Stack (Deutsch, PDF)", "hreflang": "de" }
+    ]
+  },
+
+  "variants": [
+    {
+      "id": "fullstack-en",
+      "lang": "en",
+      "output": "cv-fullstack-developer.pdf",
+      "documentTitle": "Application for Mid-Level Full-Stack Developer",
+      "role": "Mid-Level Full-Stack Developer",
+      "locationLine": "Leipzig, Germany · German citizen (EU) — no visa/work permit required",
+      "availability": [
+        "Remote, hybrid, relocation (Germany, EU, CH, AT, international remote)",
+        "Immediately — full-time (Vollzeit)"
+      ],
+      "sections": {
+        "about": "About",
+        "experience": "Experience",
+        "skills": "Skills",
+        "education": "Education",
+        "projects": "Selected projects",
+        "languages": "Languages",
+        "preferences": "Preferences"
+      },
+      "about": [
+        "Mid-Level Full-Stack Developer with <strong>{{experienceYears}} years of commercial experience</strong> building web applications across <strong>frontend, backend, APIs, and databases</strong>.",
+        "At <strong>Straumann Group</strong>, built <strong>internal websites and business tools</strong> for a global medtech company — full-stack delivery (JavaScript, Node.js, SQL), workflow digitalization, UX improvements, legacy refactoring, and REST/XML integrations. Since 2020, delivered <strong>{{freelanceCount}} freelance client sites</strong> from architecture through deployment — {{freelanceStack}}. Built <strong>TripTogether</strong>, an end-to-end React/TypeScript + Node.js product with Mapbox, REST APIs, web scraping, and Gemini AI integration.",
+        "Strong in <strong>JavaScript, TypeScript, React, Next.js, Node.js, SQL/MySQL, REST APIs</strong>, and AI-assisted development (Cursor, ChatGPT API, Gemini API). Product-oriented, self-organized, remote-ready. Seeking a <strong>mid-level full-stack or full-stack-leaning frontend role</strong> where I can own features across the stack and ship reliable production code."
+      ],
+      "experience": [
+        {
+          "title": "Full Stack Developer — Straumann Group",
+          "meta": ["{{straumannPeriod}}", "Dual study / Praxispartner", "Global medtech (Straumann Group)"],
+          "intro": "Developed <strong>internal web applications and digitalization solutions</strong> used across departments — from UI and business logic through databases, integrations, and legacy modernization.",
+          "bullets": [
+            "Built and maintained <strong>internal websites and web-based business tools</strong> for operational teams",
+            "Delivered <strong>end-to-end full-stack features</strong>: JavaScript frontends, Node.js services, SQL data layer",
+            "<strong>Digitalized manual workflows</strong> and optimized internal business processes through automation",
+            "<strong>Refactored legacy modules</strong> (including Visual Basic .NET); improved performance, reliability, and maintainability",
+            "Designed and optimized <strong>SQL queries</strong>; structured data access for internal use cases",
+            "Integrated internal and external systems via <strong>REST APIs</strong> and <strong>XML</strong>",
+            "Conducted <strong>UX analysis</strong> (Figma) and improved usability of internal interfaces",
+            "Created technical documentation; code reviews, testing, and releases with an <strong>international team</strong> (Git, GitLab, Microsoft Teams)"
+          ],
+          "tech": "JavaScript, Node.js, SQL, XML, REST APIs, Visual Basic .NET, Figma"
+        },
+        {
+          "title": "Freelance Full Stack Developer",
+          "meta": ["{{freelancePeriod}}", "Freelance / independent", "{{freelanceCount}} client sites — {{freelanceStack}}"],
+          "intro": "",
+          "bullets": [
+            "Designed and shipped <strong>end-to-end websites and web applications</strong> for businesses and private clients",
+            "Built <strong>backend services with Node.js</strong>; designed and optimized <strong>SQL/MySQL</strong> schemas and queries",
+            "Implemented <strong>React frontends</strong>, REST API integrations, automation tools, and data-processing pipelines",
+            "Owned projects from planning through deployment; remote collaboration via Git/GitHub"
+          ],
+          "tech": "JavaScript, TypeScript, React, Node.js, SQL, MySQL, REST APIs, HTML, CSS"
+        },
+        {
+          "title": "Game / XR Developer — Actrio Studio",
+          "meta": ["{{actrioPeriod}}", "Employment"],
+          "intro": "Immersive VR experience (The Great Ocean) — interactive 3D gameplay and exploration.",
+          "bullets": [
+            "Built gameplay mechanics and UI systems in <strong>C# / Unity</strong>",
+            "Testing, debugging, asset integration; collaboration with designers and artists"
+          ],
+          "tech": "Unity, C#, XR/VR, 3ds Max, Photoshop, Figma"
+        }
+      ],
+      "skills": [
+        { "title": "Frontend", "items": "JavaScript, TypeScript · React, Next.js · HTML, CSS, Tailwind CSS · Responsive Web Design · Component-based UI development · Modern frontend architecture · UI/UX basics, Figma" },
+        { "title": "Backend & APIs", "items": "Node.js · REST APIs, API integration · Server-side logic · Web scraping · XML (enterprise integration context) · AI API integration (ChatGPT API, Gemini API)" },
+        { "title": "Databases", "items": "SQL, MySQL · Database queries, schema design basics · Joins, aggregations, triggers · Query optimization (project + commercial context) · ER diagrams, normalization basics (academic)" },
+        { "title": "AI & automation", "items": "AI-assisted development (Cursor) · Prompt engineering basics · ChatGPT API, Gemini API · Google Sheets automation · Script-based data processing · Workflow automation concepts" },
+        { "title": "DevOps & tools", "items": "Git, GitHub, GitLab · Docker (project context) · Vite, npm, Node.js ecosystem · VS Code, Cursor, Browser DevTools · Netlify · Microsoft Teams (collaboration) · Google Workspace, Notion" },
+        { "title": "Additional programming", "items": "Python, Java, C++, C, C# (academic / secondary) · Visual Basic .NET (Straumann context) · Unity, C# (Actrio — XR project)" }
+      ],
+      "education": {
+        "title": "Duale Hochschule Sachsen Leipzig — Computer Science / Informatics (dual study)",
+        "note": "<strong>Incomplete — not a completed degree</strong> · studied through semester 5 of ~6; program discontinued by the university, which also ended the tied practical-training contract at Straumann Group",
+        "focus": "Focus areas: software development, web technologies, databases, SQL, programming, software engineering basics, IT project work, ER diagrams, system analysis basics"
+      },
+      "projects": [
+        {
+          "name": "TripTogether (Meeting Point Finder)",
+          "intro": "End-to-end web application built individually as a university project: frontend, Node.js backend, external APIs, travel data processing, AI ranking.",
+          "bullets": [
+            "Full-stack delivery from idea to working prototype",
+            "<strong>Node.js backend server</strong> connected to multiple external data sources",
+            "REST API integration, web scraping, and data aggregation",
+            "AI-powered ranking with Google Gemini API",
+            "Frontend: React/TypeScript UI with maps and complex user flows",
+            "AI-assisted development workflow (Cursor) throughout the project"
+          ],
+          "tech": "React, TypeScript, Vite, Node.js, Mapbox, Google Gemini API, REST APIs, web scraping",
+          "link": "{{projectRepo}}"
+        },
+        {
+          "name": "Personal Portfolio Website",
+          "intro": "Full-stack presentation layer for professional profile and projects.",
+          "bullets": [
+            "Production deployment and maintainable frontend codebase",
+            "Responsive, component-based architecture"
+          ],
+          "tech": "React, responsive design, component-based UI, Netlify deployment",
+          "link": "{{portfolio}}"
+        }
+      ],
+      "languages": [
+        { "name": "Russian", "level": "Native" },
+        { "name": "Belarusian", "level": "Native" },
+        { "name": "German", "level": "C1 / B2+ working proficiency" },
+        { "name": "English", "level": "B1 professional working proficiency" }
+      ],
+      "preferences": [
+        "Full-time (Vollzeit) — immediately available",
+        "Remote or hybrid (Germany, EU, CH, AT)",
+        "Open to relocation within Germany / EU",
+        "Product companies, SaaS, startups, internal platforms, modern tech teams"
+      ]
+    },
+
+    {
+      "id": "frontend-en",
+      "lang": "en",
+      "output": "cv-frontend-developer.pdf",
+      "documentTitle": "Application for Mid-Level Frontend Developer",
+      "role": "Mid-Level Frontend Developer",
+      "locationLine": "Leipzig, Germany · German citizen (EU) — no visa/work permit required",
+      "availability": [
+        "Remote, hybrid, relocation (Germany, EU, CH, AT, international remote)",
+        "Immediately — full-time (Vollzeit)"
+      ],
+      "sections": {
+        "about": "About",
+        "experience": "Experience",
+        "skills": "Skills",
+        "education": "Education",
+        "projects": "Selected projects",
+        "languages": "Languages",
+        "preferences": "Preferences"
+      },
+      "about": [
+        "Mid-Level Frontend Developer with <strong>{{experienceYears}} years of commercial experience</strong> building modern, user-facing web applications with <strong>React, TypeScript, Next.js</strong>, and Tailwind CSS.",
+        "Delivered production <strong>internal web applications and UX improvements</strong> at <strong>Straumann Group</strong> (global medtech — internal websites, digitalization, business tools), shipped <strong>{{freelanceCount}} freelance client sites</strong> end-to-end since 2020, and built flagship personal projects such as <strong>TripTogether</strong> — a React/TypeScript travel app with Mapbox, REST APIs, and Gemini-powered AI ranking.",
+        "Strong in responsive UI, component architecture, API-integrated user flows, and <strong>AI-assisted development</strong> (Cursor, ChatGPT API, Gemini API).",
+        "Product-oriented engineer with UI/UX awareness (Figma, wireframing, responsive design). Comfortable working independently and in distributed teams. Seeking a <strong>mid-level frontend role</strong> (remote or hybrid) where I can own features, integrate APIs, and contribute clean, maintainable React code."
+      ],
+      "experience": [
+        {
+          "title": "Full Stack Developer — Straumann Group",
+          "meta": ["{{straumannPeriod}}", "Dual study / Praxispartner", "Global medtech (Straumann Group)"],
+          "intro": "Developed <strong>internal websites and web-based business tools</strong> for cross-department operations — digitalization of workflows, UX improvements, and reliable day-to-day tooling.",
+          "bullets": [
+            "Built and extended <strong>internal web applications</strong> with focus on clear, usable interfaces for business teams",
+            "Conducted <strong>UX analysis</strong> and interface improvements in <strong>Figma</strong>; simplified complex internal workflows",
+            "Delivered <strong>frontend and backend features</strong>: JavaScript UI, Node.js logic, SQL-backed data flows",
+            "<strong>Digitalized manual processes</strong> and optimized internal operations through better tooling and automation",
+            "Integrated systems via <strong>REST APIs</strong> and XML; refactored <strong>legacy modules</strong> for maintainability",
+            "Collaborated with stakeholders, wrote documentation, and shipped features in an <strong>international team</strong> (Git, GitLab, Microsoft Teams)"
+          ],
+          "tech": "JavaScript, Node.js, SQL, XML, REST APIs, Visual Basic .NET, Figma"
+        },
+        {
+          "title": "Freelance Full Stack Developer",
+          "meta": ["{{freelancePeriod}}", "Freelance / independent", "{{freelanceCount}} client sites — {{freelanceStack}}"],
+          "intro": "",
+          "bullets": [
+            "Designed and shipped websites and web applications for businesses and private clients",
+            "Built <strong>React-based frontends</strong> and integrated third-party REST APIs",
+            "Implemented responsive UIs, automation tools, and data-processing workflows",
+            "Owned projects from planning through deployment; remote collaboration via Git/GitHub"
+          ],
+          "tech": "JavaScript, TypeScript, React, Node.js, SQL, MySQL, REST APIs, HTML, CSS"
+        },
+        {
+          "title": "Game / XR Developer — Actrio Studio",
+          "meta": ["{{actrioPeriod}}", "Employment"],
+          "intro": "Immersive VR experience (The Great Ocean) — interactive 3D gameplay and exploration.",
+          "bullets": [
+            "Built Unity-based gameplay mechanics and <strong>UI/interaction</strong> systems in C#",
+            "Asset integration, optimization, testing, and cross-disciplinary collaboration"
+          ],
+          "tech": "Unity, C#, XR/VR, Figma, Photoshop"
+        }
+      ],
+      "skills": [
+        { "title": "Frontend (core)", "items": "JavaScript, TypeScript · React, Next.js · HTML, CSS, Tailwind CSS · Responsive Web Design · Component-based UI development · Modern frontend architecture · State management basics · UI/UX basics, wireframing, interface improvement" },
+        { "title": "APIs & integration", "items": "REST APIs, API integration · Maps API (Mapbox) · Web scraping (project context) · AI API integration (ChatGPT API, Gemini API)" },
+        { "title": "Backend awareness (collaboration with backend teams)", "items": "Node.js basics · Server-side logic basics · SQL / MySQL (queries, schema basics)" },
+        { "title": "AI & development workflow", "items": "AI-assisted development (Cursor) · Prompt engineering basics · AI feature integration in web applications · ChatGPT API, Gemini API" },
+        { "title": "Databases", "items": "SQL, MySQL · Joins, aggregations, triggers (academic + project context) · Database design basics" },
+        { "title": "Tools & design", "items": "Git, GitHub, GitLab · Vite, npm, Node.js ecosystem · VS Code, Cursor, Browser DevTools · Figma, Photoshop basics · Netlify · Google Sheets, Google Workspace · Microsoft Office, Notion" },
+        { "title": "Additional programming (academic / secondary)", "items": "Python, Java, C++, C, C#" }
+      ],
+      "education": {
+        "title": "Duale Hochschule Sachsen Leipzig — Computer Science / Informatics (dual study)",
+        "note": "<strong>Incomplete — not a completed degree</strong> · studied through semester 5 of ~6; program discontinued by the university, which also ended the tied practical-training contract at Straumann Group",
+        "focus": "Focus areas: software development, web technologies, databases, SQL, programming, software engineering basics, IT project work, business informatics topics"
+      },
+      "projects": [
+        {
+          "name": "TripTogether (Meeting Point Finder)",
+          "intro": "University project (solo work) — web application for finding optimal meeting-point cities between travelers, using maps, travel data, and AI-powered ranking.",
+          "bullets": [
+            "Built responsive <strong>frontend features</strong>, component structure, and user-facing flows",
+            "Integrated external APIs (maps, weather, travel data) into a cohesive product experience",
+            "Implemented <strong>AI-powered ranking</strong> with Google Gemini API",
+            "Used AI tools (Cursor, ChatGPT/Gemini) throughout development for faster iteration",
+            "Connected frontend with Node.js backend and multiple data sources",
+            "Delivered a working product from idea to prototype"
+          ],
+          "tech": "React, TypeScript, Vite, Node.js, Mapbox, Google Gemini API, REST APIs, web scraping",
+          "link": "{{projectRepo}}"
+        },
+        {
+          "name": "Personal Portfolio Website",
+          "intro": "Professional portfolio presenting projects, technical skills, and profile.",
+          "bullets": [
+            "Clean, responsive UI and modern web presentation",
+            "Component-based frontend architecture",
+            "Deployed and maintained production-ready frontend"
+          ],
+          "tech": "React, responsive design, component-based UI, Netlify deployment",
+          "link": "{{portfolio}}"
+        }
+      ],
+      "languages": [
+        { "name": "Russian", "level": "Native" },
+        { "name": "Belarusian", "level": "Native" },
+        { "name": "German", "level": "C1 / B2+ working proficiency" },
+        { "name": "English", "level": "B1 professional working proficiency" }
+      ],
+      "preferences": [
+        "Full-time (Vollzeit) — immediately available",
+        "Remote or hybrid (Germany, EU, CH, AT)",
+        "Open to relocation within Germany / EU for strong opportunities",
+        "Product companies, SaaS, startups, modern web agencies"
+      ]
+    },
+
+    {
+      "id": "fullstack-de",
+      "lang": "de",
+      "output": "cv-fullstack-developer-de.pdf",
+      "documentTitle": "Bewerbung als Full Stack Developer (Mid-Level)",
+      "role": "Full Stack Developer (Mid-Level)",
+      "locationLine": "Leipzig, Deutschland · Deutscher Staatsbürger (EU) — keine Arbeitserlaubnis erforderlich",
+      "availability": [
+        "Remote, Hybrid, Relocation (Deutschland, EU, CH, AT, international)",
+        "Ab sofort — Vollzeit"
+      ],
+      "sections": {
+        "about": "Über mich",
+        "experience": "Erfahrung",
+        "skills": "Skills",
+        "education": "Ausbildung",
+        "projects": "Ausgewählte Projekte",
+        "languages": "Sprachen",
+        "preferences": "Präferenzen"
+      },
+      "about": [
+        "Full-Stack-Entwickler (Mid-Level) mit <strong>{{experienceYears}} Jahren kommerzieller Erfahrung</strong> in der Entwicklung von Webanwendungen über <strong>Frontend, Backend, APIs und Datenbanken</strong> hinweg.",
+        "Bei der <strong>Straumann Group</strong> (im Rahmen eines dualen Studiums als Praxispartner) an <strong>internen Websites und Business-Tools</strong> für ein globales Medtech-Unternehmen mitgewirkt — Full-Stack-Umsetzung (JavaScript, Node.js, SQL), Digitalisierung von Workflows, UX-Verbesserungen, Legacy-Refactoring und REST/XML-Integrationen. Seit 2020 <strong>{{freelanceCount}} Freelance-Kundenprojekte</strong> von der Architektur bis zum Deployment umgesetzt — {{freelanceStackDe}}. Selbstständig als Hochschulprojekt entwickelt: <strong>TripTogether</strong>, eine End-to-End React/TypeScript + Node.js-Anwendung mit Mapbox, REST APIs, Web Scraping und Gemini-AI-Integration.",
+        "Stark in <strong>JavaScript, TypeScript, React, Next.js, Node.js, SQL/MySQL, REST APIs</strong> und AI-assisted Development (Cursor, ChatGPT API, Gemini API). Produktorientiert, selbstorganisiert, remote-erfahren. Sucht eine <strong>Mid-Level Full-Stack- oder full-stack-nahe Frontend-Rolle</strong> mit Feature-Ownership über den gesamten Stack."
+      ],
+      "experience": [
+        {
+          "title": "Full Stack Developer — Straumann Group",
+          "meta": ["{{straumannPeriod}}", "Duales Studium / Praxispartner", "Globales Medtech-Unternehmen"],
+          "intro": "Entwicklung <strong>interner Webanwendungen und Digitalisierungslösungen</strong> für mehrere Abteilungen — von UI und Business-Logik über Datenbanken, Integrationen bis zur Legacy-Modernisierung. Der Praxisvertrag war Teil eines dualen Studiums (dreiseitige Vereinbarung Timur / Straumann / Duale Hochschule Sachsen Leipzig); die Tätigkeit umfasste reale kommerzielle Full-Stack-Arbeit.",
+          "bullets": [
+            "Aufbau und Pflege <strong>interner Websites und webbasierter Business-Tools</strong> für operative Teams",
+            "<strong>End-to-End-Full-Stack-Features</strong>: JavaScript-Frontends, Node.js-Services, SQL-Datenschicht",
+            "<strong>Digitalisierung manueller Workflows</strong> und Optimierung interner Prozesse durch Automatisierung",
+            "<strong>Refactoring von Legacy-Modulen</strong> (u. a. Visual Basic .NET); Verbesserung von Performance, Zuverlässigkeit und Wartbarkeit",
+            "Design und Optimierung von <strong>SQL-Queries</strong>; Strukturierung des Datenzugriffs für interne Use Cases",
+            "Integration interner und externer Systeme via <strong>REST APIs</strong> und <strong>XML</strong>",
+            "<strong>UX-Analyse</strong> (Figma) und Verbesserung der Usability interner Interfaces",
+            "Technische Dokumentation, Code Reviews, Testing und Releases im <strong>internationalen Team</strong> (Git, GitLab, Microsoft Teams)"
+          ],
+          "tech": "JavaScript, Node.js, SQL, XML, REST APIs, Visual Basic .NET, Figma"
+        },
+        {
+          "title": "Freelance Full Stack Developer",
+          "meta": ["{{freelancePeriodDe}}", "Selbstständig", "{{freelanceCount}} Kundenprojekte — {{freelanceStackDe}}"],
+          "intro": "",
+          "bullets": [
+            "Entwicklung und Auslieferung von <strong>End-to-End-Websites und Webanwendungen</strong> für Unternehmen und Privatkunden",
+            "Backend-Services mit <strong>Node.js</strong>; Design und Optimierung von <strong>SQL/MySQL-Schemas und Queries</strong>",
+            "<strong>React-Frontends</strong>, REST-API-Integrationen, Automatisierungstools und Datenverarbeitungs-Pipelines",
+            "Verantwortung von der Planung bis zum Deployment; Remote-Zusammenarbeit via Git/GitHub"
+          ],
+          "tech": "JavaScript, TypeScript, React, Node.js, SQL, MySQL, REST APIs, HTML, CSS"
+        },
+        {
+          "title": "Game / XR Developer — Actrio Studio",
+          "meta": ["{{actrioPeriod}}", "Anstellung"],
+          "intro": "Immersives VR-Erlebnis (The Great Ocean) — interaktives 3D-Gameplay und Exploration.",
+          "bullets": [
+            "Entwicklung von Gameplay-Mechaniken und UI-Systemen in <strong>C# / Unity</strong>",
+            "Testing, Debugging, Asset-Integration; Zusammenarbeit mit Designern und Artists"
+          ],
+          "tech": "Unity, C#, XR/VR, 3ds Max, Photoshop, Figma"
+        }
+      ],
+      "skills": [
+        { "title": "Frontend", "items": "JavaScript, TypeScript · React, Next.js · HTML, CSS, Tailwind CSS · Responsive Web Design · Komponentenbasierte UI-Entwicklung · Moderne Frontend-Architektur · UI/UX-Grundlagen, Figma" },
+        { "title": "Backend & APIs", "items": "Node.js · REST APIs, API-Integration · Server-Logik-Grundlagen · Web Scraping · XML (Enterprise-Integrationskontext) · AI-API-Integration (ChatGPT API, Gemini API)" },
+        { "title": "Datenbanken", "items": "SQL, MySQL · Queries, Schema-Design-Grundlagen · Joins, Aggregationen, Trigger · Query-Optimierung (Projekt- und kommerzieller Kontext) · ER-Diagramme, Normalisierung-Grundlagen (akademisch)" },
+        { "title": "AI & Automatisierung", "items": "AI-assisted Development (Cursor) · Prompt Engineering (Grundlagen) · ChatGPT API, Gemini API · Google Sheets Automatisierung · Skriptbasierte Datenverarbeitung · Workflow-Automatisierung (Grundlagen)" },
+        { "title": "DevOps & Tools", "items": "Git, GitHub, GitLab · Docker (Projektkontext) · Vite, npm, Node.js-Ökosystem · VS Code, Cursor, Browser DevTools · Netlify · Microsoft Teams (Zusammenarbeit) · Google Workspace, Notion" },
+        { "title": "Weitere Programmiersprachen", "items": "Python, Java, C++, C, C# (akademisch / sekundär) · Visual Basic .NET (Straumann-Kontext) · Unity, C# (Actrio — XR-Projekt)" }
+      ],
+      "education": {
+        "title": "Duale Hochschule Sachsen Leipzig — Informatik (duales Studium)",
+        "note": "<strong>Nicht abgeschlossen</strong> · bis Semester 5 von ~6 studiert; der Studiengang wurde von der Hochschule beendet, wodurch auch der damit verbundene Praxisvertrag bei der Straumann Group endete",
+        "focus": "Schwerpunkte: Softwareentwicklung, Webtechnologien, Datenbanken, SQL, Programmierung, Software-Engineering-Grundlagen, IT-Projektarbeit, ER-Diagramme, Systemanalyse-Grundlagen"
+      },
+      "projects": [
+        {
+          "name": "TripTogether (Meeting Point Finder)",
+          "intro": "Hochschulprojekt (Einzelarbeit) — End-to-End-Webanwendung: Frontend, Node.js-Backend, externe APIs, Reisedatenverarbeitung, AI-Ranking.",
+          "bullets": [
+            "Eigenständige Full-Stack-Umsetzung von der Idee bis zum funktionierenden Prototyp",
+            "<strong>Node.js-Backend-Server</strong> verbunden mit mehreren externen Datenquellen",
+            "REST-API-Integration, Web Scraping und Datenaggregation",
+            "AI-gestütztes Ranking mit Google Gemini API",
+            "Frontend: React/TypeScript-UI mit Karten und komplexen User Flows",
+            "AI-assisted Development Workflow (Cursor) im gesamten Projekt"
+          ],
+          "tech": "React, TypeScript, Vite, Node.js, Mapbox, Google Gemini API, REST APIs, Web Scraping",
+          "link": "{{projectRepo}}"
+        },
+        {
+          "name": "Persönliche Portfolio-Website",
+          "intro": "Full-Stack-Präsentationsschicht für professionelles Profil und Projekte.",
+          "bullets": [
+            "Produktions-Deployment und wartbare Frontend-Codebasis",
+            "Responsive, komponentenbasierte Architektur"
+          ],
+          "tech": "React, Responsive Design, komponentenbasierte UI, Netlify Deployment",
+          "link": "{{portfolio}}"
+        }
+      ],
+      "languages": [
+        { "name": "Russisch", "level": "Muttersprache" },
+        { "name": "Belarussisch", "level": "Muttersprache" },
+        { "name": "Deutsch", "level": "C1 / B2+ (Arbeitsniveau)" },
+        { "name": "Englisch", "level": "B1 (berufliche Arbeitssprache)" }
+      ],
+      "preferences": [
+        "Vollzeit — ab sofort verfügbar",
+        "Remote oder Hybrid (Deutschland, EU, CH, AT)",
+        "Offen für Relocation innerhalb Deutschland / EU",
+        "Produktunternehmen, SaaS, Startups, interne Plattformen, moderne Tech-Teams"
+      ]
+    }
+  ]
+}

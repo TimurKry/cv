@@ -5,32 +5,63 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Timur Kryvasheyev — Full-Stack / Frontend Developer</title>
 <meta name="description" content="Timur Kryvasheyev — Full-Stack / Frontend Developer (React, TypeScript, Next.js, Node.js). Leipzig, Germany. Open to remote, hybrid, relocation." />
+<link rel="canonical" href="https://timurkry.github.io/cv/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%234338ca%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-family%3D%22Helvetica%2CArial%2Csans-serif%22%20font-size%3D%2230%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3ETK%3C%2Ftext%3E%3C%2Fsvg%3E" />
+
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Timur Kryvasheyev — Full-Stack / Frontend Developer" />
+<meta property="og:description" content="Timur Kryvasheyev — Full-Stack / Frontend Developer (React, TypeScript, Next.js, Node.js). Leipzig, Germany. Open to remote, hybrid, relocation." />
+<meta property="og:url" content="https://timurkry.github.io/cv/" />
+<meta property="og:image" content="https://timurkry.github.io/cv/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Timur Kryvasheyev — Full-Stack / Frontend Developer" />
+<meta name="twitter:description" content="Timur Kryvasheyev — Full-Stack / Frontend Developer (React, TypeScript, Next.js, Node.js). Leipzig, Germany. Open to remote, hybrid, relocation." />
+<meta name="twitter:image" content="https://timurkry.github.io/cv/og.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Timur Kryvasheyev",
+  "jobTitle": "Full-Stack / Frontend Developer",
+  "email": "mailto:timurkry.dev@gmail.com",
+  "url": "https://timurkry.github.io/cv/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Leipzig",
+    "addressCountry": "DE"
+  },
+  "knowsLanguage": [
+    "Russian",
+    "Belarusian",
+    "German",
+    "English"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/timur-kryvasheyev-02940022b/",
+    "https://github.com/TimurKry",
+    "https://ktimur-portfolio.netlify.app/"
+  ]
+}
+</script>
+
 <style>
+:root {
+  --ink: #16181d;
+  --ink-soft: #3f4451;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --accent: #4338ca;
+  --accent-soft: #eef2ff;
+  --bg: #ffffff;
+  --card-bg: #fafafa;
+  --card-border: #ececee;
+}
+@media (prefers-color-scheme: dark) {
   :root {
-    --ink: #16181d;
-    --ink-soft: #3f4451;
-    --muted: #6b7280;
-    --line: #e5e7eb;
-    --accent: #4338ca;
-    --accent-soft: #eef2ff;
-    --bg: #ffffff;
-    --card-bg: #fafafa;
-    --card-border: #ececee;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --ink: #f3f4f6;
-      --ink-soft: #d1d5db;
-      --muted: #9ca3af;
-      --line: #2a2d34;
-      --accent: #a5b4fc;
-      --accent-soft: #1e1b4b;
-      --bg: #101114;
-      --card-bg: #17181c;
-      --card-border: #23252b;
-    }
-  }
-  :root[data-theme="dark"] {
     --ink: #f3f4f6;
     --ink-soft: #d1d5db;
     --muted: #9ca3af;
@@ -41,159 +72,149 @@
     --card-bg: #17181c;
     --card-border: #23252b;
   }
-  :root[data-theme="light"] {
-    --ink: #16181d;
-    --ink-soft: #3f4451;
-    --muted: #6b7280;
-    --line: #e5e7eb;
-    --accent: #4338ca;
-    --accent-soft: #eef2ff;
-    --bg: #ffffff;
-    --card-bg: #fafafa;
-    --card-border: #ececee;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--ink-soft);
-    line-height: 1.6;
-    font-size: 16px;
-  }
-  .page {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 56px 20px 80px;
-  }
-  header {
-    margin-bottom: 36px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid var(--line);
-  }
-  .badge {
-    display: inline-block;
-    padding: 4px 12px;
-    background: var(--accent-soft);
-    color: var(--accent);
-    border-radius: 999px;
-    font-size: 12.5px;
-    font-weight: 600;
-    margin-bottom: 14px;
-  }
-  h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--ink);
-    line-height: 1.05;
-  }
-  .headline {
-    margin: 8px 0 0;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--muted);
-  }
-  .contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 16px;
-    margin-top: 18px;
-    font-size: 14px;
-    color: var(--muted);
-  }
-  .contact a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); }
-  .contact a:hover { color: var(--accent); border-color: var(--accent); }
-  .downloads {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  .downloads a {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 14px;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    color: var(--ink-soft);
-    text-decoration: none;
-    font-size: 13.5px;
-    font-weight: 600;
-  }
-  .downloads a:hover { border-color: var(--accent); color: var(--accent); }
-  section { margin-bottom: 34px; }
-  .section-head {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 0 0 14px;
-  }
-  .section-head::after { content: ''; flex: 1; height: 1px; background: var(--line); }
-  .section-title {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--accent);
-  }
-  p { margin: 0 0 12px; font-size: 15.5px; }
-  p:last-child { margin-bottom: 0; }
-  strong { color: var(--ink); font-weight: 600; }
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px 28px;
-  }
-  @media (max-width: 560px) { .skills-grid, .footer-meta { grid-template-columns: 1fr; } }
-  .skill-title { margin: 0 0 4px; font-size: 13.5px; font-weight: 700; color: var(--ink); }
-  .skill-items { margin: 0; font-size: 14px; color: var(--muted); }
-  .card {
-    padding: 16px 18px;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-left: 3px solid var(--accent);
-    border-radius: 10px;
-    margin-bottom: 14px;
-  }
-  .card:last-child { margin-bottom: 0; }
-  .card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-bottom: 6px;
-  }
-  .card-title { margin: 0; font-size: 16.5px; font-weight: 700; color: var(--ink); }
-  .card-period { font-size: 13px; font-weight: 600; color: var(--muted); white-space: nowrap; }
-  .card ul { margin: 8px 0; padding-left: 20px; font-size: 14.5px; }
-  .card li { margin-bottom: 4px; }
-  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-  .tag {
-    font-size: 12px;
-    padding: 3px 9px;
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    color: var(--muted);
-  }
-  .card a.proj-link { display: inline-block; margin-top: 8px; font-size: 13px; color: var(--accent); word-break: break-all; }
-  .footer-meta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
-  }
-  .lang-item { font-size: 14.5px; margin-bottom: 6px; }
-  .pref-list { margin: 0; padding: 0; list-style: none; }
-  .pref-list li { font-size: 14px; color: var(--muted); padding-left: 14px; position: relative; margin-bottom: 6px; }
-  .pref-list li::before { content: ''; position: absolute; left: 0; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
-  footer { margin-top: 40px; font-size: 12.5px; color: var(--muted); text-align: center; }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink-soft);
+  line-height: 1.6;
+  font-size: 16px;
+}
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 20px 80px;
+}
+header {
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1.05;
+}
+.headline {
+  margin: 8px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--muted);
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 18px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.contact a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); }
+.contact a:hover { color: var(--accent); border-color: var(--accent); }
+.downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.downloads a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.downloads a:hover { border-color: var(--accent); color: var(--accent); }
+section { margin-bottom: 34px; }
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 14px;
+}
+.section-head::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+.section-title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+p { margin: 0 0 12px; font-size: 15.5px; }
+p:last-child { margin-bottom: 0; }
+strong { color: var(--ink); font-weight: 600; }
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+}
+@media (max-width: 560px) { .skills-grid, .footer-meta { grid-template-columns: 1fr; } }
+.skill-title { margin: 0 0 4px; font-size: 13.5px; font-weight: 700; color: var(--ink); }
+.skill-items { margin: 0; font-size: 14px; color: var(--muted); }
+.card {
+  padding: 16px 18px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+.card:last-child { margin-bottom: 0; }
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.card-title { margin: 0; font-size: 16.5px; font-weight: 700; color: var(--ink); }
+.card-period { font-size: 13px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.card ul { margin: 8px 0; padding-left: 20px; font-size: 14.5px; }
+.card li { margin-bottom: 4px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.tag {
+  font-size: 12px;
+  padding: 3px 9px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--muted);
+}
+.card a.proj-link { display: inline-block; margin-top: 8px; font-size: 13px; color: var(--accent); word-break: break-all; }
+.footer-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.lang-item { font-size: 14.5px; margin-bottom: 6px; }
+.pref-list { margin: 0; padding: 0; list-style: none; }
+.pref-list li { font-size: 14px; color: var(--muted); padding-left: 14px; position: relative; margin-bottom: 6px; }
+.pref-list li::before { content: ''; position: absolute; left: 0; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+footer { margin-top: 40px; font-size: 12.5px; color: var(--muted); text-align: center; }
 </style>
 </head>
 <body>
@@ -212,64 +233,65 @@
       <a href="https://ktimur-portfolio.netlify.app/" target="_blank" rel="noopener">Portfolio</a>
     </div>
     <div class="downloads">
-      <a href="cv-fullstack-developer.pdf">↓ CV — Full-Stack focus (PDF)</a>
-      <a href="cv-frontend-developer.pdf">↓ CV — Frontend focus (PDF)</a>
+      <a href="cv-fullstack-developer.pdf" hreflang="en">↓ CV — Full-Stack focus (PDF)</a>
+      <a href="cv-frontend-developer.pdf" hreflang="en">↓ CV — Frontend focus (PDF)</a>
+      <a href="cv-fullstack-developer-de.pdf" hreflang="de">↓ Lebenslauf — Full-Stack (Deutsch, PDF)</a>
     </div>
   </header>
 
   <section>
     <div class="section-head"><h2 class="section-title">About</h2></div>
     <p>Full-Stack / Frontend Developer with <strong>6+ years of commercial experience</strong> building web applications across frontend, backend, APIs, and databases.</p>
-    <p>At <strong>Straumann Group</strong> (dual study / Praxispartner, global medtech), delivered internal websites and business tools — full-stack work, workflow digitalization, UX improvements, legacy refactoring, and REST/XML integrations. Since 2020, 7 <strong>freelance</strong> client sites end-to-end, across custom builds, Tilda, Webflow, and Shopify. Built <strong>TripTogether</strong> as a solo university project — a React/TypeScript + Node.js travel app with Mapbox, REST APIs, and Gemini-powered AI ranking.</p>
+    <p>At <strong>Straumann Group</strong> (dual study / Praxispartner, global medtech), delivered internal websites and business tools — full-stack work, workflow digitalization, UX improvements, legacy refactoring, and REST/XML integrations. Since 2020, 7 <strong>freelance</strong> client sites end-to-end — custom builds, Tilda, Webflow, Shopify. Built <strong>TripTogether</strong> as a solo university project — a React/TypeScript + Node.js travel app with Mapbox, REST APIs, and Gemini-powered AI ranking.</p>
     <p>Strong in <strong>JavaScript, TypeScript, React, Next.js, Node.js, SQL/MySQL, REST APIs</strong>, and AI-assisted development (Cursor, ChatGPT API, Gemini API). Product-oriented, self-organized, remote-ready. Looking for a mid-level full-stack or frontend role with real feature ownership.</p>
   </section>
 
   <section>
     <div class="section-head"><h2 class="section-title">Experience</h2></div>
 
-    <div class="card">
-      <div class="card-top">
-        <h3 class="card-title">Full Stack Developer — Straumann Group</h3>
-        <span class="card-period">10/2023 – 06/2026 · Dual study / Praxispartner</span>
+      <div class="card">
+        <div class="card-top">
+          <h3 class="card-title">Full Stack Developer — Straumann Group</h3>
+          <span class="card-period">10/2023 – 06/2026 · Dual study / Praxispartner</span>
+        </div>
+        <p>Global medtech company — internal web applications, digitalization, legacy modernization.</p>
+        <ul>
+          <li>Built and maintained internal websites and web-based business tools for operational teams</li>
+          <li>Delivered end-to-end full-stack features: JavaScript frontends, Node.js services, SQL data layer</li>
+          <li>Digitalized manual workflows and optimized internal processes through automation</li>
+          <li>Refactored legacy modules (incl. Visual Basic .NET); improved reliability and maintainability</li>
+          <li>Integrated internal and external systems via REST APIs and XML</li>
+          <li>UX analysis (Figma) and interface improvements; documentation and code reviews in an international team</li>
+        </ul>
+        <div class="tags"><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">SQL</span><span class="tag">XML</span><span class="tag">REST APIs</span><span class="tag">Figma</span></div>
       </div>
-      <p>Global medtech company — internal web applications, digitalization, legacy modernization.</p>
-      <ul>
-        <li>Built and maintained internal websites and web-based business tools for operational teams</li>
-        <li>Delivered end-to-end full-stack features: JavaScript frontends, Node.js services, SQL data layer</li>
-        <li>Digitalized manual workflows and optimized internal processes through automation</li>
-        <li>Refactored legacy modules (incl. Visual Basic .NET); improved reliability and maintainability</li>
-        <li>Integrated internal and external systems via REST APIs and XML</li>
-        <li>UX analysis (Figma) and interface improvements; documentation and code reviews in an international team</li>
-      </ul>
-      <div class="tags"><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">SQL</span><span class="tag">XML</span><span class="tag">REST APIs</span><span class="tag">Figma</span></div>
-    </div>
 
-    <div class="card">
-      <div class="card-top">
-        <h3 class="card-title">Freelance Full Stack Developer</h3>
-        <span class="card-period">06/2020 – present</span>
+      <div class="card">
+        <div class="card-top">
+          <h3 class="card-title">Freelance Full Stack Developer</h3>
+          <span class="card-period">06/2020 – present</span>
+        </div>
+        <p>7 freelance client sites — custom builds, Tilda, Webflow, Shopify.</p>
+        <ul>
+          <li>Designed and shipped end-to-end websites and web apps for businesses and private clients</li>
+          <li>Built backend services with Node.js; optimized SQL/MySQL schemas and queries</li>
+          <li>React frontends, REST API integrations, automation tools, data-processing pipelines</li>
+        </ul>
+        <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">SQL / MySQL</span></div>
       </div>
-      <p>7 freelance client sites — custom builds, Tilda, Webflow, and Shopify.</p>
-      <ul>
-        <li>Designed and shipped end-to-end websites and web apps for businesses and private clients</li>
-        <li>Built backend services with Node.js; optimized SQL/MySQL schemas and queries</li>
-        <li>React frontends, REST API integrations, automation tools, data-processing pipelines</li>
-      </ul>
-      <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">SQL / MySQL</span></div>
-    </div>
 
-    <div class="card">
-      <div class="card-top">
-        <h3 class="card-title">Game / XR Developer — Actrio Studio</h3>
-        <span class="card-period">09/2021 – 07/2022</span>
+      <div class="card">
+        <div class="card-top">
+          <h3 class="card-title">Game / XR Developer — Actrio Studio</h3>
+          <span class="card-period">09/2021 – 07/2022</span>
+        </div>
+        <p>Immersive VR experience (The Great Ocean) — interactive 3D gameplay and exploration.</p>
+        <ul>
+          <li>Built gameplay mechanics and UI systems in C# / Unity</li>
+          <li>Testing, debugging, asset integration; collaboration with designers and artists</li>
+        </ul>
+        <div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">XR/VR</span></div>
       </div>
-      <p>Immersive VR experience (The Great Ocean) — interactive 3D gameplay and exploration.</p>
-      <ul>
-        <li>Built gameplay mechanics and UI systems in C# / Unity</li>
-        <li>Testing, debugging, asset integration; collaboration with designers and artists</li>
-      </ul>
-      <div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">XR/VR</span></div>
-    </div>
   </section>
 
   <section>
@@ -280,7 +302,7 @@
         <p class="skill-items">JavaScript, TypeScript · React, Next.js · HTML, CSS, Tailwind CSS · Responsive design · Component-based UI · UI/UX basics, Figma</p>
       </div>
       <div>
-        <p class="skill-title">Backend & APIs</p>
+        <p class="skill-title">Backend &amp; APIs</p>
         <p class="skill-items">Node.js · REST APIs · Server-side logic · Web scraping · AI API integration (ChatGPT, Gemini)</p>
       </div>
       <div>
@@ -288,7 +310,7 @@
         <p class="skill-items">SQL, MySQL · Schema design · Joins, aggregations, triggers · Query optimization</p>
       </div>
       <div>
-        <p class="skill-title">AI & workflow</p>
+        <p class="skill-title">AI &amp; workflow</p>
         <p class="skill-items">AI-assisted development (Cursor) · Prompt engineering · Google Sheets automation</p>
       </div>
       <div>
@@ -313,25 +335,26 @@
   <section>
     <div class="section-head"><h2 class="section-title">Projects</h2></div>
 
-    <div class="card">
-      <div class="card-top"><h3 class="card-title">TripTogether (Meeting Point Finder)</h3></div>
-      <p>Solo university project — web app for finding optimal meeting-point cities between travelers, using maps, travel data, and AI-powered ranking.</p>
-      <ul>
-        <li>Full-stack delivery from idea to working prototype</li>
-        <li>Node.js backend connected to multiple external data sources</li>
-        <li>AI-powered ranking with Google Gemini API</li>
-        <li>React/TypeScript UI with maps and complex user flows</li>
-      </ul>
-      <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Mapbox</span><span class="tag">Gemini API</span></div>
-      <a class="proj-link" href="https://github.com/TimurKry/meeting-point-finder" target="_blank" rel="noopener">github.com/TimurKry/meeting-point-finder</a>
-    </div>
+      <div class="card">
+        <div class="card-top"><h3 class="card-title">TripTogether (Meeting Point Finder)</h3></div>
+        <p>Solo university project — web app for finding optimal meeting-point cities between travelers, using maps, travel data, and AI-powered ranking.</p>
+        <ul>
+          <li>Full-stack delivery from idea to working prototype</li>
+          <li>Node.js backend connected to multiple external data sources</li>
+          <li>AI-powered ranking with Google Gemini API</li>
+          <li>React/TypeScript UI with maps and complex user flows</li>
+        </ul>
+        <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Mapbox</span><span class="tag">Gemini API</span></div>
+        <a class="proj-link" href="https://github.com/TimurKry/meeting-point-finder" target="_blank" rel="noopener">github.com/TimurKry/meeting-point-finder</a>
+      </div>
 
-    <div class="card">
-      <div class="card-top"><h3 class="card-title">Personal Portfolio Website</h3></div>
-      <p>Production-deployed, responsive, component-based frontend presenting projects and profile.</p>
-      <div class="tags"><span class="tag">React</span><span class="tag">Netlify</span></div>
-      <a class="proj-link" href="https://ktimur-portfolio.netlify.app/" target="_blank" rel="noopener">ktimur-portfolio.netlify.app</a>
-    </div>
+      <div class="card">
+        <div class="card-top"><h3 class="card-title">Personal Portfolio Website</h3></div>
+        <p>Production-deployed, responsive, component-based frontend presenting projects and profile.</p>
+
+        <div class="tags"><span class="tag">React</span><span class="tag">Netlify</span></div>
+        <a class="proj-link" href="https://ktimur-portfolio.netlify.app/" target="_blank" rel="noopener">ktimur-portfolio.netlify.app</a>
+      </div>
   </section>
 
   <div class="footer-meta">
@@ -353,7 +376,7 @@
     </div>
   </div>
 
-  <footer>Last updated 2026-07-13 · timurkry.dev@gmail.com</footer>
+  <footer>Last updated 2026-08-12 · timurkry.dev@gmail.com</footer>
 </div>
 </body>
 </html>
