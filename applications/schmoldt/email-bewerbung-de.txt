@@ -1,0 +1,47 @@
+Betreff: Bewerbung als Frontend-Entwickler (w/m/d)
+
+Sehr geehrte Damen und Herren,
+
+auf Ihre Ausschreibung als Frontend-Entwickler (w/m/d) bin ich über Ihre
+Website aufmerksam geworden und bewerbe mich hiermit auf diese Position.
+
+Ich bin Frontend-orientierter Full Stack Developer mit über fünf Jahren
+kommerzieller Projekterfahrung und arbeite sicher in JavaScript,
+TypeScript, HTML und CSS. Ein Schwerpunkt meiner Arbeit ist genau das,
+was Sie in der Ausschreibung beschreiben: Designs verstehen, ihre
+Umsetzbarkeit bewerten und daraus saubere, wartbare Oberflaechen bauen.
+
+Bei der Straumann Group habe ich drei Weblösungen umgesetzt bzw.
+modernisiert. Am nächsten an Ihrer Ausschreibung liegt die umfassende
+Modernisierung des Straumann Order Tool: Neugestaltung von UI und UX,
+Migration und Anpassung von Legacy-Code sowie neue Prüfungen und
+Funktionen für den B2B-Einsatz. Dazu kamen ein Office-Information-Display
+mit aktuellen Kennzahlen und ein Management-Tool zur automatisierten
+Analyse von XML-Daten. In allen drei Fällen habe ich die Fachbereiche von
+der Anforderungsaufnahme über die Machbarkeitseinschätzung bis zur
+Umsetzung begleitet — die beratende Rolle, die Ihre Stelle vorsieht, ist
+mir daher vertraut.
+
+Parallel habe ich seit 2020 freiberuflich sieben Kundenprojekte
+eigenverantwortlich betreut, von der Anforderungsaufnahme und der
+direkten Kundenkommunikation bis zum produktiven Livegang.
+
+Offen gesagt: Mit Vue.js habe ich bisher nicht produktiv gearbeitet.
+Meine Framework-Erfahrung liegt bei React und Next.js; da beide auf
+denselben Konzepten aufsetzen — komponentenbasierte Architektur,
+reaktives State-Handling, Anbindung dynamischer APIs — halte ich die
+Einarbeitung für zügig machbar.
+
+Ich arbeite bevorzugt remote, gelegentliche Vor-Ort-Termine in Hamburg
+oder Dortmund sind für mich möglich. Ich spreche Deutsch auf C1-Niveau,
+bin deutscher Staatsbürger und sofort verfügbar.
+
+Meinen Lebenslauf finden Sie im Anhang. Über ein Gespräch würde ich mich
+sehr freuen.
+
+Mit freundlichen Grüßen
+Timur Kryvasheyev
+
+timurkry.dev@gmail.com
+github.com/TimurKry
+ktimur-portfolio.netlify.app
