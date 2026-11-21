@@ -13,8 +13,8 @@ from _base import THEMES, ROOT, STATIC, svg, d, esc, countup, text_width, mix  #
 
 CV = {
     "name": "Timur Kryvasheyev",
-    "role": "Full-Stack / Frontend Developer",
-    "stack": "React · TypeScript · Next.js · Node.js · SQL",
+    "role": "Full-Stack Developer · Node.js & AI",
+    "stack": "Node.js · TypeScript · React · Next.js · PostgreSQL · Claude Code",
     "meta": "Leipzig, Germany · EU citizen · remote / hybrid / relocation",
     "status": "Open to work",
     "stats": [  # value, suffix, label
@@ -25,15 +25,16 @@ CV = {
     ],
     "timeline_start": (2020, 1),
     "jobs": [  # title, company, start, end(None=now), color
-        ("Freelance Full-Stack Developer", "Custom, Tilda, Webflow, Shopify", (2020, 6), None, "blue"),
+        ("Freelance Full-Stack Developer", "Custom, Tilda, Webflow, Shopify", (2020, 6), None, "ink"),
         ("Game / XR Developer", "Actrio Studio · Unity, C#", (2021, 9), (2022, 7), "yellow"),
         ("Full-Stack Developer", "Straumann Group · MedTech", (2023, 10), (2026, 6), "red"),
+        ("Full-Stack Developer · Node.js & AI", "Innowise", (2026, 10), None, "blue"),
     ],
     "skills": [
         ("FRONTEND", ["TypeScript", "React", "Next.js", "Tailwind", "Figma"]),
-        ("BACKEND", ["Node.js", "REST APIs", "XML", "Scraping"]),
-        ("DATA", ["SQL", "MySQL", "Schema design", "Query tuning"]),
-        ("AI & TOOLS", ["Gemini API", "OpenAI API", "Cursor", "Git", "Docker"]),
+        ("BACKEND", ["Node.js", "Express", "REST APIs", "Supabase", "Docker"]),
+        ("DATA", ["PostgreSQL", "MySQL", "Schema design", "Query tuning"]),
+        ("AI-NATIVE", ["Claude Code", "Agentic workflows", "LLM APIs", "Cursor", "Gemini API"]),
     ],
 }
 
@@ -114,7 +115,7 @@ def timeline(th):
         y = 76 + i * 62
         a = X(start)
         b = X(end or (today.year, today.month))
-        fg = th["on_" + color]
+        fg = th.get("on_" + color, th["paper"])
         span = f'{start[1]:02d}/{start[0]} – ' + (f'{end[1]:02d}/{end[0]}' if end else "present")
         body.append(f'<rect class="bar" x="{a:.1f}" y="{y}" width="{b - a:.1f}" height="40" rx="8" '
                     f'fill="{th[color]}" {d(250 + i * 200)}/>')
